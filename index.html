@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>
+        Meu Portfolio
+    </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #e7e7e7;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        .row, 
+        .row>.column {
+            padding: 8px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        @media screen and (max-width:900px ) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:600px ) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Meu Portfólio</h1>
+        <hr/>
+        <h2>Mateus Barbeiro Garcia</h2>
+        <p>Estudante de Engenharia de Software no Instituto Federal do Paraná - Campus Paranavaí</p>
+        <p>Meus Contato: (44) 9 99853-5228</p>
+    
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="./imagens/IMG-20210428-WA0045.jpg" alt="Teste" style="width: 100%;"/>
+                    <h3>astfdtas</h3>
+                    <p>asdasdasdasdhasdhbascjhbsa</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="content">
+                    <img src="./imagens/IMG-20210502-WA0009.jpg" alt="Teste" style="width: 100%;"/>
+                    <h3>astfdtas</h3>
+                    <p>asdasdasdasdhasdhbascjhbsa</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="content">
+                    <img src="./imagens/IMG_20201225_025522223.jpg" alt="Teste" style="width: 100%;"/>
+                    <h3>astfdtas</h3>
+                    <p>asdasdasdasdhasdhbascjhbsa</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src="./imagens/IMG_20210213_234546167.jpg" alt="Teste" style="width: 100%;"/>
+                    <h3>astfdtas</h3>
+                    <p>asdasdasdasdhasdhbascjhbsa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="./imagens/IMG-20210402-WA0049.jpg" alt="Teste" style="width: 100%;"/>
+            <h3>astfdtas</h3>
+            <p>asdasdasdasdhasdhbascjhbsa</p>
+        </div>
+    
+    </div>
+</body>
+
+
+</html>
