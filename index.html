@@ -10,9 +10,10 @@
             box-sizing: border-box;
         }
         body {
-            background-color: #e7e7e7;
+            background-color: black;
             padding: 20px;
             font-family: Arial;
+            color: white;
         }
 
         .main {
@@ -57,60 +58,42 @@
             }
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            padding-left: 1.3em;
-        }
-
-        li:before {
-            content: "\f00c";
-            font-family: FontAwesome;
-            display: inline-block;
-            margin-left: -1.3em;
-            width: 1.3em;
-        }
-
         .content {
-            background-color: white;
+            background-color:rgb(145, 145, 145);
             padding: 10px;
         }
 
         .outside {
             list-style-position: outside;
         }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <div>
-            <h1>Meu Portfólio</h1>    
-        </div>
+        <h1 style="text-align: center;">Meu Portfólio</h1>
         <hr/>
-        <div class="row">
-            <div class="column" style="width: 75%;">
+        <div>
+            <img src="./imagens/IMG-20181229-WA0055.jpg" style="width: 300px;" class="center"/>
+
+            <div style="text-align: center;">
                 <h2>Mateus Barbeiro Garcia</h2>
                 <p>Rua Geni Mota Garcia Nº136<br>
                     87780-000 / Paraíso do Norte - PR<br>
                     mateusgarcia2001@gmail.com / (44) 99853-5228<br>
                     19 anos / Brasileiro / Solteiro 
                 </p>
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/mateus-barbeiro-garcia-73b72416a/" target="_blank">LinkedIn</a></dd>
-                    <li><a href="https://www.facebook.com/mateus.barbeirogarcia" target="_blank">Facebook</a></dd>
-                    <li><a href="https://www.instagram.com/mateusbg01/?hl=pt" target="_blank">Instagram</a></dd>
-                </ul>
+                <a href="https://www.linkedin.com/in/mateus-barbeiro-garcia-73b72416a/" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/mateus.barbeirogarcia" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/mateusbg01/?hl=pt" target="_blank">Instagram</a>
             </div>
-
-            <div class="column" style="width: 25%;">
-                <img src="./imagens/IMG-20181229-WA0055.jpg" style="width: 100%;"/>
-            </div>
-
         </div>
     
         <h3>Experiência Profissional</h3>
@@ -164,6 +147,7 @@
             </div>
         </div>
 
+        <h3>Formação acadêmica</h3>
         <div class="content">
             <img src="./imagens/IFPR.jpg" alt="Teste" style="width: 100%;"/>
             <h3>Instituto Federal do Paraná - Campus Paranavaí</h3>
